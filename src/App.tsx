@@ -2,6 +2,11 @@ import React from 'react';
 import styled from 'styled-components/native';
 
 import AppleMap from './AppleMap';
+import InitialLocation from './InitialLocation';
+import MarkerOnMap from './MarkerOnMap';
+import TrackingMapWithMarker from './TrackingMapWithMarker';
+import TrackUserLocation from './TrackUserLocation';
+import UserLocation from './UserLocation';
 
 const Container = styled.View`
   flex: 1;
@@ -10,7 +15,7 @@ const Container = styled.View`
 const App = () => {
   return (
     <Container>
-      <AppleMap />
+      <TrackUserLocation />
     </Container>
   );
 };
